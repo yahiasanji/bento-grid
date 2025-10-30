@@ -1,0 +1,94 @@
+body {
+  background-color: hsla(0, 0%, 83%, 0.496);
+  font-family: "DM Sans";
+}
+h1,
+h2 {
+  margin: 0;
+}
+.container {
+  display: grid;
+
+  gap: 2em;
+  align-content: center;
+  align-items: center;
+  grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four"
+    "five"
+    "six"
+    "seven"
+    "eight";
+  @media (width > 900px) {
+    padding: 3em 4em;
+
+    height: 100vh;
+    grid-template-areas:
+      "seven one one four"
+      "seven one one four"
+      "seven two three four"
+      "eight two three four"
+      "eight six five five ";
+  }
+}
+
+.card {
+  background: white;
+  padding: 1em;
+  border-radius: 15px;
+}
+
+.c1 {
+  grid-area: one;
+  color: white;
+  text-align: center;
+  background-color: hsl(256, 67%, 59%);
+  h1 {
+    font-size: 3.5em;
+    font-weight: 600;
+    text-align: center;
+  }
+  img {
+    width: 75%;
+  }
+  p {
+    font-size: 1.3em;
+    margin: 0;
+  }
+  span {
+    color: hsl(39, 100%, 71%);
+  }
+}
+
+.c2 {
+  grid-area: two;
+  img {
+    width: 100%;
+  }
+}
+.c3 {
+  background-color: hsl(39, 100%, 71%);
+  padding: 1em 1em 0 1em;
+  grid-area: three;
+  img {
+    width: 75%;
+    margin: 0;
+  }
+}
+.c4 {
+  grid-area: four;
+}
+.c5 {
+  grid-area: five;
+}
+.c6 {
+  grid-area: six;
+}
+.c7 {
+  grid-area: seven;
+}
+.c8 {
+  grid-area: eight;
+}
