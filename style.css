@@ -27,7 +27,6 @@ h2 {
     height: 100vh;
     grid-template-areas:
       "seven one one four"
-      "seven one one four"
       "seven two three four"
       "eight two three four"
       "eight six five five ";
@@ -72,6 +71,9 @@ h2 {
   background-color: hsl(39, 100%, 71%);
   padding: 1em 1em 0 1em;
   grid-area: three;
+  h2 {
+    margin-bottom: 0.5em;
+  }
   img {
     width: 75%;
     margin: 0;
@@ -79,16 +81,51 @@ h2 {
 }
 .c4 {
   grid-area: four;
+  background-color: hsl(254, 88%, 90%);
+  text-align: center;
+  h2 {
+    margin-bottom: 0.5em;
+  }
+  img {
+    width: 90%;
+    border-radius: 10px;
+  }
 }
 .c5 {
   grid-area: five;
+  color: white;
+  background-color: hsl(256, 67%, 59%);
+  text-align: center;
+  h2 {
+    font-size: 1.5em;
+  }
+  img {
+    width: 70%;
+  }
 }
 .c6 {
   grid-area: six;
+  img {
+    width: 50%;
+  }
 }
 .c7 {
   grid-area: seven;
+  background-color: hsl(31, 66%, 93%);
+  h2 {
+    margin-bottom: 0.5em;
+  }
+  img {
+    width: 70%;
+  }
 }
 .c8 {
+  background-color: hsl(39, 100%, 71%);
   grid-area: eight;
+  h2 {
+    margin-bottom: 0.5em;
+  }
+  img {
+    width: 70%;
+  }
 }
